@@ -26,7 +26,7 @@ jobs:
 
             - name: Publish to Nexus
               run: |
-                  npm publish --registry=http://localhost:8081/repository/csh-fe-template
+                  npm publish --registry=http://localhost:8081/repository/csh-fe-template/
               #   npm publish --registry=https://<your-nexus-url>/repository/<your-repo-name>/
               env:
-              NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+               NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
