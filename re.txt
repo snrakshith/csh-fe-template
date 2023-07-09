@@ -1,0 +1,20 @@
+csh-fe: sqp_2c591f6e457e8691a1e19e43cb17414382f5aefd
+
+docker run \
+    --rm \
+    -e SONAR_HOST_URL="http://${SONARQUBE_URL}" \
+    -e SONAR_SCANNER_OPTS="-Dsonar.projectKey=${YOUR_PROJECT_KEY}" \
+    -e SONAR_LOGIN="myAuthenticationToken" \
+    -v "${YOUR_REPO}:/usr/src" \
+    sonarsource/sonar-scanner-cli
+
+
+docker run \
+    --rm \
+    -e SONAR_HOST_URL="http://127.0.0.1:9000" \
+    -e SONAR_SCANNER_OPTS="-Dsonar.projectKey=csh-fe" \
+    -e SONAR_LOGIN="sqp_2c591f6e457e8691a1e19e43cb17414382f5aefd" \
+    -v "https://github.com/snrakshith/csh-fe-template:/usr/src" \
+    sonarsource/sonar-scanner-cli    
+
+ curl  http://localhost:9000/api/server/version?
