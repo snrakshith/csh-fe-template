@@ -30,10 +30,19 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v3
-            - run: yarn
-            - run: yarn coverage:combined
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Build and test
+              run: npm run build && npm test
+
+            - name: Test coverage
+              run: npm run test:coverage
+
             - name: Setup Pages
               uses: actions/configure-pages@v2
+
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:
