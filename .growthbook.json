@@ -1,0 +1,4 @@
+{
+    "featuresEndpoint": "https://cdn.growthbook.io/api/features/<api_key>",
+    "appHost":"https://cdn.growthbook.io"
+}

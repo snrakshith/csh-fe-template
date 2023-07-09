@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@*": ["./*"]
+            // "@common/validators":["src/common/utils/validators"],
+            // "@common/schema":["src/common/utils/validators/yupSchema"]
+            // "@common/*":["src/common/utils/*"]
+        },       
+    },
+}
