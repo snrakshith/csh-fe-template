@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-    const se = "sqp_2c591f6e457e8691a1e19e43cb17414382f5aefd";
+    // const se = "sqp_2c591f6e457e8691a1e19e43cb17414382f5aefd";
 
     return (
         <div className="App">
