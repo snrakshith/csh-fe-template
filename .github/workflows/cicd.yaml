@@ -1,10 +1,10 @@
 # Deploy React app to Cloudfront distribution where AWS S3 as its origin
 name: Deploy React app
 
-on:
-  push:
-    branches:
-      - main
+# on:
+  # push:
+    # branches:
+      # - main
 
 jobs:
   build:
