@@ -1,6 +1,5 @@
 {
   "name": "csh-fe-template",
-  "homepage": "https://xlox.in",
   "version": "0.0.1", 
   "publishConfig": {
     "registry": "http://localhost:8081/repository/csh-fe-template/"
